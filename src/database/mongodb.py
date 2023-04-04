@@ -8,7 +8,7 @@ ca = certifi.where()
 class MongodbOperation:
 
     def __init__(self) -> None:
-
+        MONGO_DB_URL="mongodb+srv://jayanthsoppara:jayanth233@cluster0.vu2uivv.mongodb.net/?retryWrites=true&w=majority"
         self.client = pymongo.MongoClient(os.getenv('MONGO_DB_URL'),tlsCAFile=ca)
         self.db_name="ineuron"
 
